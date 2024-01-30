@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Weather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./css/style.css"
+    />
+    <link rel="shortcut icon" href="./assets/cloud.svg" type="image/x-icon" />
+    <script defer src="./js/main.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <a href="#" class="logo"><img src="/assets/logo.svg" alt="" /></a>
+        <div class="main-weather">
+          <div class="degree">
+            <span></span>
+            <p>°</p>
+          </div>
+          <div class="city-data">
+            <span></span>
+            <p></p>
+          </div>
+          <div class="condition">
+            <img src="./assets/cloud.svg" width="100px" height="100px" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <section
+        class="weather-bar"
+        style="position: fixed; right: 0; top: 0; bottom: 0"
+      >
+        <div class="search-input" style="position: relative">
+          <input type="search" placeholder="Search location..." />
+          <img
+            src="./assets/search.svg"
+            alt=""
+            style="position: absolute; right: 10px"
+          />
+        </div>
+        <div class="weather-details">
+          <h1>weather-details...</h1>
+          <span>thunderstorm with light drizzle</span>
+          <div class="weather-temps">
+            <div class="temp-max">
+              <span>Temp max</span>
+              <div class="temp">
+                <div class="degree">
+                  <p></p>
+                  <p>°</p>
+                </div>
+                <img src="./assets/max.svg" alt="" />
+              </div>
+            </div>
+            <div class="temp-min">
+              <span>Temp min</span>
+              <div class="temp">
+                <div class="degree">
+                  <p></p>
+                  <p>°</p>
+                </div>
+                <img src="./assets/min.svg" alt="" />
+              </div>
+            </div>
+            <div class="humadity">
+              <span>Humadity</span>
+              <div class="temp">
+                <div class="degree">
+                  <p></p>
+                  <p>°</p>
+                </div>
+                <img src="./assets/humadity.svg" alt="" />
+              </div>
+            </div>
+            <div class="cloudy">
+              <span>Cloudy</span>
+              <div class="temp">
+                <div class="degree">
+                  <p></p>
+                  <p>%</p>
+                </div>
+                <img src="./assets/cloud.svg" alt="" />
+              </div>
+            </div>
+            <div class="wind">
+              <span>Wind</span>
+              <div class="temp">
+                <div class="degree">
+                  <p></p>
+                  <p>km/h</p>
+                </div>
+                <img src="./assets/wind.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="weather-forecast"></div>
+      </section>
+    </main>
+  </body>
+</html>
