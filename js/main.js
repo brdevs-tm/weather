@@ -49,7 +49,7 @@ const handleSearch = (city) => {
 
       mainWeather.querySelector(".degree span").textContent = `${Math.ceil(
         data.main.temp
-      )} °`;
+      )}`;
 
       mainWeather.querySelector(".city-data span").textContent = data.name;
       mainWeather.querySelector(".city-data p").textContent = formattedTime;
