@@ -3,6 +3,14 @@ const searchInputBtn = document.querySelector(".search-input img");
 const mainWeather = document.querySelector(".main-weather");
 const weatherTemps = document.querySelector(".weather-temps");
 
+document.addEventListener("DOMContentLoaded", () => {
+  const loadingSpinner = document.getElementById("loading-spinner");
+  loadingSpinner.style.display = "block";
+  setTimeout(() => {
+    loadingSpinner.style.display = "none";
+  }, 2000);
+});
+
 const baseURL = {
   key: "8b9fe96be4f62d3df24c564cf5b69013",
   url: "https://api.openweathermap.org/data/2.5/weather",
