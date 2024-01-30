@@ -2,12 +2,17 @@ const searchInput = document.querySelector(".search-input input");
 const searchInputBtn = document.querySelector(".search-input img");
 const mainWeather = document.querySelector(".main-weather");
 const weatherTemps = document.querySelector(".weather-temps");
+const mainContent = document.querySelector(".main");
 
 document.addEventListener("DOMContentLoaded", () => {
   const loadingSpinner = document.getElementById("loading-spinner");
   loadingSpinner.style.display = "block";
+  document.body.style = "background: #000";
+  mainContent.style.display = "none";
   setTimeout(() => {
     loadingSpinner.style.display = "none";
+    document.body.style = "background: url(../assets/bg.jpeg)";
+    mainContent.style.display = "block";
   }, 2000);
 });
 
